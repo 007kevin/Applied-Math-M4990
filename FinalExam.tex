@@ -136,7 +136,7 @@
   
 \end{solution}
 \clearpage
-\begin{problem}{1}
+\begin{problem}{2}
   Let \(\delta(x)\) be the Dirac delta function. Justify the identity
   \[
     \delta(1-x^2) = \frac{\delta(x-1)+\delta(x+1)}{2}
@@ -174,8 +174,41 @@
   \[
     \boxed{\delta(1-x^2) = \frac{\delta(x-1)+\delta(x+1)}{2}}
   \]
-
 \end{solution}
+\clearpage
+\begin{problem}{3}
+  Let \(f : [0,1] \rightarrow \R\) be a given continuous function,
+  and consider the following differential equation for the function \(y\):
+  \begin{align}
+    \left\{
+      \begin{array}{ll}
+        y'''(x) = f(x) \qquad\qquad\qquad 0 \le x \le 1 \\
+        y(0) = y'(0) = y''(0) = 0
+      \end{array}
+    \right.
+  \end{align}
+  Intuitively, finding \(y(x)\) requires three integrations. This problem illustrates that
+  by employing a Green's function we can actually find \(y\) via a $single$ integral.
+\end{problem}
+\begin{subproblem}{a}
+  Show that if the Green's function \(u = G(x:s)\) satisfies
+  \[
+    \left\{
+      \begin{array}{ll}
+        u'''(x) = \delta(x-s) \qquad\qquad\qquad 0 \le x \le 1 \\
+        u(0) = u'(0) = u''(0) = 0
+      \end{array}
+    \right.
+  \]
+  then the function
+  \begin{align}
+    y(x) = \int_{0}^{1}f(s)G(x:s)ds
+  \end{align}
+  satisfies (1).
+  
+  
+\end{subproblem}
+
 \end{document}
               
             
