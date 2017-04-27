@@ -12,6 +12,9 @@
 \newenvironment{solution}[1][Solution]{\begin{trivlist}
   \item[\hskip \labelsep {\bfseries #1} \hskip \labelsep]}{\end{trivlist}}
 
+\theoremstyle{remark}
+\newtheorem*{theorem*}{Theorem}
+
 \begin{document}
  
 \title{Math 4990 - Final Exam}
@@ -58,6 +61,57 @@
   We have shown with Euler-Lagrange equation the necessary conditions for \(y\) to minimize \(J[y]\)
   and because we are given the integrand is strongly convex on the defined set D, we have
   the sufficient conditions to guarantee \(y\) is the unique minimizer.
+\end{solution}
+\clearpage
+\begin{subproblem}{b}
+  \(D = \{y \in C^1[1,2]:y(2) = 3\}\)
+\end{subproblem}
+
+\begin{solution}
+  $ $\\
+  From the notes given in class, we have the following:
+  \begin{theorem*}{}
+  If \(F(x,y,y')\) is strongly convex in \((y,y')\) then a solution \(y(x)\) of the
+  Differential Euler-Lagrange equation uniquely minimizes
+  \[
+    J[y] = \int_{a}^{b}F(x,y,y')dx
+  \]
+  over \(\{y \in C'[a,b] : y(b) = B\} \) if \(F_{y'}(a,y(a),y'(a)) = 0\).
+  \end{theorem*}
+  $ $\\
+  We find the solution to the Euler-Lagrange equation \(F_y(x,y,y') -
+  \frac{d}{dx}F_{y'}(x,y,y') = 0\) where \(F(x,y,y') = \frac{y'(x)^2}{x}\).
+  \begin{align*}
+    \frac{\partial F}{\partial y} - \frac{d}{dx}\frac{\partial F}{\partial y'} = 0
+    &\lra \frac{\partial F}{\partial y} = \frac{d}{dx}\frac{\partial F}{\partial y'} \\
+    &\lra 0 = \frac{d}{dx}\frac{2y'}{x} \lra \int 0 dx = \int \frac{d}{dx}\frac{2y'}{x} dx \\
+    &\lra \frac{2y'}{x} = C \quad (C \in \R) \\
+    &\lra y' = Bx \quad (B \in \R) \\
+    &\lra \int y' dx = \int Bx dx \\
+    &\lra y = c_1x^2 + c_2 \quad (c1,c2 \in \R)
+  \end{align*}
+  \(y\) must also satisfy the boundary condition:
+  \begin{align*}
+    y(2) = 4c_1 + c_2 = 3 
+    &\lra c_2 = 3-4c_1 \\
+    &\lra y = c_1x^2 + (3-4c_1) \\
+    &\lra y = c_1(x^2-4)+3
+  \end{align*}
+  thus
+  \begin{align*}
+    F_{y'}(1,y(1),y'(1)) = 0 &\lra \frac{2y'(1)}{1} = 0 \\
+                             &\lra y'(1) = 0 \\
+                             &\lra 2c_1(1) \\
+                             &\lra c_1 = 0
+  \end{align*}
+  which implies
+  \begin{align*}
+    \boxed{y(x) = 3}
+  \end{align*}
+  Given the integrand is strongly convex on the defined set \(D\) along with the theorem
+  mentioned, \(y \in D\) uniquely minimizes \(J[y]\) over \(D\).
+  
+  
 \end{solution}
 
 \end{document}
