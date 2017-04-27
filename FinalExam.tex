@@ -109,11 +109,41 @@
     \boxed{y(x) = 3}
   \end{align*}
   Given the integrand is strongly convex on the defined set \(D\) along with the theorem
-  mentioned, \(y \in D\) uniquely minimizes \(J[y]\) over \(D\).
-  
-  
+  mentioned above, \(y\) uniquely minimizes \(J[y]\) over \(D\).
 \end{solution}
 
+\clearpage
+\begin{subproblem}{c}
+  \(D = C^1[1,2]\)
+\end{subproblem}
+\begin{solution}
+  $ $\\
+  If J is a minimum at \(y \in D \) then \(y\) must satify the Euler-Lagrange equation
+  \\\(F_y(x,y,y') - \frac{d}{dx}F_{y'}(x,y,y') = 0\) where \(F(x,y,y') = \frac{y'(x)^2}{x}\).
+  \begin{align*}
+    \frac{\partial F}{\partial y} - \frac{d}{dx}\frac{\partial F}{\partial y'} = 0
+    &\lra \frac{\partial F}{\partial y} = \frac{d}{dx}\frac{\partial F}{\partial y'} \\
+    &\lra 0 = \frac{d}{dx}\frac{2y'}{x} \lra \int 0 dx = \int \frac{d}{dx}\frac{2y'}{x} dx \\
+    &\lra \frac{2y'}{x} = C \quad (C \in \R) \\
+    &\lra y' = Bx \quad (B \in \R) \\
+    &\lra \int y' dx = \int Bx dx \\
+    &\lra y = c_1x^2 + c_2 \quad (c1,c2 \in \R)
+  \end{align*}
+  From strong convexity and observation we see if \(y = c_2\), we achieve a minimum for \\
+  \(J[y] = \int_{1}^{2}\frac{y'(x)^2}{x}dx\) since \(y'(x)^2 \ge 0\) and
+  \(x \in [1,2]\) which implies \(J[y] \ge 0\). However \(y\) is not a unique minimizer
+  since \(c2 \in \R\).
+  
+\end{solution}
+\clearpage
+\begin{problem}{1}
+  Let \(\delta(x)\) be the Dirac delta function. Justify the identity
+  \[
+    \delta(1-x^2) = \frac{\delta(x-1)+\delta(x+1)}{2}
+  \]
+  . \\
+  Hint: consider the integral \(\int_{-\infty}^{\infty}\delta(1-x^2)dx\)
+\end{problem}
 \end{document}
               
             
