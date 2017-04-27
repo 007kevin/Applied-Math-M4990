@@ -1,0 +1,700 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.25)  26 APR 2017 15:26
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**\input truthesis.cls
+(./truthesis.cls
+
+LaTeX Warning: You have requested package `',
+               but the package provides `truthesis'.
+
+Package: truthesis 2007/09/14 1.0 Thompson Rivers University thesis class
+\bindingmargin=\skip41
+(/usr/share/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count88
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
+\fancy@headwidth=\skip44
+\f@ncyO@elh=\skip45
+\f@ncyO@erh=\skip46
+\f@ncyO@olh=\skip47
+\f@ncyO@orh=\skip48
+\f@ncyO@elf=\skip49
+\f@ncyO@erf=\skip50
+\f@ncyO@olf=\skip51
+\f@ncyO@orf=\skip52
+)
+
+./truthesis.cls:33: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \newlength{\MY@topmargin}
+                              
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\MY=\skip53
+
+./truthesis.cls:34: LaTeX Error: Command \MY already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \newlength{\MY@insidemargin}
+                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\MY=\skip54
+
+./truthesis.cls:35: LaTeX Error: Command \MY already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \newlength{\MY@outsidemargin}
+                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\MY=\skip55
+
+Overfull \hbox (51.5248pt too wide) in paragraph at lines 33--36
+[]\OT1/cmr/m/n/10 @topmargin@topmargin in-side-mar-gin@insidemargin out-side-ma
+r-gin@outsidemargin 
+ []
+
+./truthesis.cls:39: Missing number, treated as zero.
+<to be read again> 
+                   @
+l.39 \setlength{\MY@topmargin}{1.0in}
+                                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./truthesis.cls:39: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.39 \setlength{\MY@topmargin}{1.0in}
+                                     
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./truthesis.cls:39: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \setlength{\MY@topmargin}{1.0in}
+                                     
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./truthesis.cls:40: Missing number, treated as zero.
+<to be read again> 
+                   @
+l.40 \setlength{\MY@insidemargin}{1.15in}
+                                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./truthesis.cls:40: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.40 \setlength{\MY@insidemargin}{1.15in}
+                                         
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./truthesis.cls:41: Missing number, treated as zero.
+<to be read again> 
+                   @
+l.41 \setlength{\MY@outsidemargin}{1.15in}
+                                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./truthesis.cls:41: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   @
+l.41 \setlength{\MY@outsidemargin}{1.15in}
+                                          
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+./truthesis.cls:50: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \addtolength{\textwidth}{-\MY@insidemargin}
+                                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./truthesis.cls:54: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \setlength{\oddsidemargin}{\MY@insidemargin}
+                                                 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./truthesis.cls:66: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \addtolength{\textheight}{-2\MY@topmargin}
+                                                % top and bottom margins are...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./truthesis.cls:68: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \setlength{\topmargin}{\MY@topmargin}
+                                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./truthesis.cls:75: LaTeX Error: Command \@ already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \newcommand{\@department}{}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./truthesis.cls:75: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \newcommand{\@department}{}
+                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./truthesis.cls:75: Missing number, treated as zero.
+<to be read again> 
+                   e
+l.75 \newcommand{\@department}{}
+                                
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./truthesis.cls:75: You already have nine parameters.
+\reserved@a ...\def \expandafter \@\reserved@b #10
+                                                  e{
+l.75 \newcommand{\@department}{}
+                                
+I'm going to ignore the # sign you just used.
+
+
+./truthesis.cls:76: LaTeX Error: Command \@ already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \newcommand{\@degree}{}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./truthesis.cls:76: Missing number, treated as zero.
+<to be read again> 
+                   e
+l.76 \newcommand{\@degree}{}
+                            
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./truthesis.cls:76: You already have nine parameters.
+\reserved@a ...\def \expandafter \@\reserved@b #10
+                                                  e{
+l.76 \newcommand{\@degree}{}
+                            
+I'm going to ignore the # sign you just used.
+
+
+./truthesis.cls:77: LaTeX Error: Command \@ already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \newcommand{\@examiner}{}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./truthesis.cls:77: Missing number, treated as zero.
+<to be read again> 
+                   x
+l.77 \newcommand{\@examiner}{}
+                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./truthesis.cls:77: You already have nine parameters.
+\reserved@a ...\def \expandafter \@\reserved@b #10
+                                                  x{
+l.77 \newcommand{\@examiner}{}
+                              
+I'm going to ignore the # sign you just used.
+
+./truthesis.cls:79: You can't use `\spacefactor' in vertical mode.
+\@->\spacefactor 
+                 \@m {}
+l.79 \@
+       onlypreamble{\department}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./truthesis.cls:79: Missing $ inserted.
+<inserted text> 
+                $
+l.79 \@
+       onlypreamble{\department}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./truthesis.cls:79: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \@
+       onlypreamble{\department}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 79.
+./truthesis.cls:79: Undefined control sequence.
+l.79 \@onlypreamble{\department
+                               }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./truthesis.cls:80: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.80 \@
+       onlypreamble{\degree}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./truthesis.cls:80: Undefined control sequence.
+l.80 \@onlypreamble{\degree
+                           }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./truthesis.cls:81: You can't use `\spacefactor' in math mode.
+\@->\spacefactor 
+                 \@m {}
+l.81 \@
+       onlypreamble{\examiner}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+./truthesis.cls:81: Undefined control sequence.
+l.81 \@onlypreamble{\examiner
+                             }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./truthesis.cls:82: Missing $ inserted.
+<inserted text> 
+                $
+l.82 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+\c@examiner=\count89
+./truthesis.cls:138: Use of \@ doesn't match its definition.
+\newPrepageEnvironment #1#2-> \@i
+                                 fundefined{#1}{\let \@tempa=\newenvironment...
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+./truthesis.cls:138: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./truthesis.cls:138: Argument of \new@environment has an extra }.
+<inserted text> 
+                \par 
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+./truthesis.cls:138: Paragraph ended before \new@environment was complete.
+<to be read again> 
+                   \par 
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./truthesis.cls:138: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./truthesis.cls:138: Argument of \renew@environment has an extra }.
+<inserted text> 
+                \par 
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+./truthesis.cls:138: Paragraph ended before \renew@environment was complete.
+<to be read again> 
+                   \par 
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./truthesis.cls:138: Use of \@ doesn't match its definition.
+\newPrepageEnvironment ...=\renewenvironment } \@t
+                                                  empa{#1}{ \@clearChapterPa...
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+./truthesis.cls:138: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+./truthesis.cls:138: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \newPrepageEnvironment{abstract}{Abstract}
+                                                
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[2
+
+
+\@writefile{toc}{\contentsline {chapter}{Abstract}{2}}
+]
+./truthesis.cls:139: Use of \@ doesn't match its definition.
+\newPrepageEnvironment #1#2-> \@i
+                                 fundefined{#1}{\let \@tempa=\newenvironment...
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+./truthesis.cls:139: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./truthesis.cls:139: Argument of \new@environment has an extra }.
+<inserted text> 
+                \par 
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+./truthesis.cls:139: Paragraph ended before \new@environment was complete.
+<to be read again> 
+                   \par 
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+./truthesis.cls:139: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./truthesis.cls:139: Argument of \renew@environment has an extra }.
+<inserted text> 
+                \par 
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+./truthesis.cls:139: Paragraph ended before \renew@environment was complete.
+<to be read again> 
+                   \par 
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+./truthesis.cls:139: Use of \@ doesn't match its definition.
+\newPrepageEnvironment ...=\renewenvironment } \@t
+                                                  empa{#1}{ \@clearChapterPa...
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+
+./truthesis.cls:139: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[3
+
+]
+
+./truthesis.cls:139: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...nment{acknowledgements}{Acknowledgements}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4
+
+
+\@writefile{toc}{\contentsline {chapter}{Acknowledgements}{4}}
+]
+\c@examinernum=\count90
+)
+! Emergency stop.
+<*> \input truthesis.cls
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 981 strings out of 493013
+ 12224 string characters out of 6139317
+ 69711 words of memory out of 5000000
+ 4581 multiletter control sequences out of 15000+600000
+ 4255 words of font info for 16 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,4n,43p,285b,133s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

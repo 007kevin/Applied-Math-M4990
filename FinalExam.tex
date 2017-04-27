@@ -3,6 +3,8 @@
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\lra}{\Longrightarrow}
 \newenvironment{problem}[2][Problem]{\begin{trivlist}
   \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2:}]}{\end{trivlist}}
 \newenvironment{subproblem}[2][Part]{\begin{trivlist}
@@ -16,7 +18,7 @@
 \author{Kevin Kim t00201473}
 \maketitle
  
-\begin{problem}{1}
+\begin{problem}{1} 
   Consider the integral function
   \[
     J[y] = \int_{1}^{2}\frac{y'(x)^2}{x}dx
@@ -27,13 +29,35 @@
 \end{problem}
 
 \begin{subproblem}{a}
-  \(D={y \in C^1[1,2]:y(1) = 0, y(2) = 3}\)
+  \(D=\{y \in C^1[1,2]:y(1) = 0, y(2) = 3\}\)
 \end{subproblem}
 
 \begin{solution}
   $ $\\
-  Test
-
+  If J is a minimum at \(y \in D \) then \(y\) must satify the Euler-Lagrange equation
+  \\\(F_y(x,y,y') - \frac{d}{dx}F_{y'}(x,y,y') = 0\) where \(F(x,y,y') = \frac{y'(x)^2}{x}\).
+  \begin{align*}
+    \frac{\partial F}{\partial y} - \frac{d}{dx}\frac{\partial F}{\partial y'} = 0
+    &\lra \frac{\partial F}{\partial y} = \frac{d}{dx}\frac{\partial F}{\partial y'} \\
+    &\lra 0 = \frac{d}{dx}\frac{2y'}{x} \lra \int 0 dx = \int \frac{d}{dx}\frac{2y'}{x} dx \\
+    &\lra \frac{2y'}{x} = C \quad (C \in \R) \\
+    &\lra y' = Bx \quad (B \in \R) \\
+    &\lra \int y' dx = \int Bx dx \\
+    &\lra y = c_1x^2 + c_2 \quad (c1,c2 \in \R)
+  \end{align*}
+  \(y\) must also satisfy the boundary conditions:
+  \[
+    \left\{
+      \begin{array}{ll}
+        y(1) = c_1 + c_2 = 0\\
+        y(2) = 4c_1 + c_2 = 3\\
+      \end{array}
+    \right.
+    \lra c_1 = \frac{3}{5}, c_2 = -\frac{3}{5} \lra \boxed{y = \frac{3}{5}x^2 - \frac{3}{5}}
+  \]
+  We have shown with Euler-Lagrange equation the necessary conditions for \(y\) to minimize \(J[y]\)
+  and because we are given the integrand is strongly convex on the defined set D, we have
+  the sufficient conditions to guarantee \(y\) is the unique minimizer.
 \end{solution}
 
 \end{document}
