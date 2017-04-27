@@ -144,6 +144,38 @@
   . \\
   Hint: consider the integral \(\int_{-\infty}^{\infty}\delta(1-x^2)dx\)
 \end{problem}
+\begin{solution}
+  For any continuous function f(x), we have
+  \[
+    \int_{\infty}^{\infty}f(x)\delta(1-x^2)dx =
+    \underbrace{\int_{0}^{\infty}f(x)\delta(1-x^2)dx}_\text{(1)} +
+    \underbrace{\int_{-\infty}^{0}f(x)\delta(1-x^2)dx}_\text{(2)}
+  \]
+  If we let \(\sqrt{u} = x\) and \(\frac{1}{2\sqrt{u}}du = dx\)
+  \[
+    (1) = \int_{0}^{\infty}\frac{f(\sqrt{u})\delta(1-u)}{2\sqrt{u}}du = \frac{f(1)}{2}
+  \]
+  If we let \(-\sqrt{u} = x\) and \(-\frac{1}{2\sqrt{u}}du = dx\)
+  \[
+    (2) = -\int_{-\infty}^{0}\frac{f(-\sqrt{u})\delta(1-u)}{2\sqrt{u}}du
+    = \int_{0}^{\infty}\frac{f(-\sqrt{u})\delta(1-u)}{2\sqrt{u}}du
+    = \frac{f(-1)}{2}
+  \]
+  thus
+  \begin{align*}
+    \int_{\infty}^{\infty}f(x)\delta(1-x^2)dx
+    &= \frac{1}{2}[f(1) + f(-1)] \\
+    &= \frac{1}{2}\bigg[\int_{-\infty}^{\infty}f(x)\delta(x-1)dx +
+      \int_{-\infty}^{\infty}f(x)\delta(x+1)dx\bigg] \\
+    &= \frac{1}{2}\int_{-\infty}^{\infty}f(x)(\delta(x-1) + \delta(x+1)) dx \\
+    &= \int_{-\infty}^{\infty}f(x)\frac{\delta(x-1) + \delta(x+1)}{2} dx
+  \end{align*}
+  Since \(\delta\) functions are defined only by how they behave in integrals we conclude
+  \[
+    \boxed{\delta(1-x^2) = \frac{\delta(x-1)+\delta(x+1)}{2}}
+  \]
+
+\end{solution}
 \end{document}
               
             
