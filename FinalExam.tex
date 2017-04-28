@@ -386,7 +386,17 @@
                 &\lra \frac{x^4}{24} + \frac{c_1x^2}{2} + c_2x + c_3
                   \qquad (c_1,c_2,c_3 \in R)
   \end{align*}
-  and in order to satisfy the boundary conditions, \(c_1 = c_2 = c_3 = 0\). Thus
+  and in order to satisfy the boundary conditions, \(c_1 = c_2 = c_3 = 0\) since
+  \begin{align*}
+    \left\{
+      \begin{array}{ll}
+        y(0) &= \frac{0^4}{24} = 0 \\
+        y'(0) &= \frac{0^3}{6} = 0 \\
+        y''(0) &= \frac{0^2}{3} = 0.    
+      \end{array}
+    \right.
+  \end{align*}
+  Thus
   \[
     y = \frac{x^4}{24}.
   \]
@@ -411,5 +421,18 @@
   We have showed both methods give the same results.
 \end{solution}
 \clearpage
+\begin{problem}{4}
+  The Fourier transform is often useful for finding Green's functions. Consider the following
+  partial differential equation for the function \(u(x,t)\):
+  \begin{align*}
+    \left\{
+    \begin{array}{ll}
+      u_{tt}-u_{xx} + u = 0 & -\infty < x < \infty \\
+      u(x,0) = \delta(x-s) & s \in \R \\
+      u_t(x,0) = 0.
+    \end{array}
+    \right.
+  \end{align*}
+\end{problem}
 
 \end{document}

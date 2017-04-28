@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.25)  27 APR 2017 23:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2017.4.25)  27 APR 2017 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -207,6 +207,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--281
 
 ] [8] [9
 
+] [10
+
 ] (./FinalExam.aux) ) 
 Here is how much of TeX's memory you used:
  1728 strings out of 493013
@@ -227,10 +229,10 @@ ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FinalExam.pdf (9 pages, 140593 bytes).
+Output written on FinalExam.pdf (10 pages, 143184 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 89 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
