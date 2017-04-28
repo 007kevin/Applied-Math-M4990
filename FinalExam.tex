@@ -348,12 +348,68 @@
   \(u\) is continuous.
   \begin{align*}
     u(s^+) = u(s^-) &\lra \frac{1}{2}s^2 - s^2 + F = 0 \\
-                    &\lra
+                    &\lra -\frac{1}{2}s^2 + F = 0 \\
+                    &\lra F = \frac{1}{2}s^2.
   \end{align*}
-  
-  
-  
-  
+  Thus the Green function is as follows
+  \begin{align*}
+    \boxed{
+    u(x) =
+    \left\{
+    \begin{array}{ll}
+      0 &x < s \\
+      \frac{1}{2}(x^2+s^2) - sx &x > s
+    \end{array}
+                                  \right.}
+  \end{align*}
 \end{solution}
+\clearpage
+\begin{subproblem}{c}
+  For the case \(f(x) = x\), solve (1) directly by integrating thrice. Verify that (2)
+  gives the same result.
+\end{subproblem}
+
+\begin{solution}
+  We are given
+  \begin{align*}
+    \left\{
+      \begin{array}{ll}
+        y'''(x) = x \qquad\qquad\qquad 0 \le x \le 1 \\
+        y(0) = y'(0) = y''(0) = 0
+      \end{array}
+    \right.
+  \end{align*}
+  By integrating \(f(x) = x\) thrice,
+  \begin{align*}
+    \iiint x dx &\lra \iint \frac{x^2}{2} + c_1 dx \\
+                &\lra \int \frac{x^3}{6} + c_1x + c_2 dx \\
+                &\lra \frac{x^4}{24} + \frac{c_1x^2}{2} + c_2x + c_3
+                  \qquad (c_1,c_2,c_3 \in R)
+  \end{align*}
+  and in order to satisfy the boundary conditions, \(c_1 = c_2 = c_3 = 0\). Thus
+  \[
+    y = \frac{x^4}{24}.
+  \]
+  Now to verify green's function with \(y(x) = \int_{0}^{1}f(s)G(x;s)ds\), we have
+  \[
+    G(x;s) =
+    \left\{
+    \begin{array}{ll}
+      0 &x < s \\
+      \frac{1}{2}(x^2+s^2) - sx &x > s
+    \end{array}
+    \right.
+  \]
+  therefore
+  \begin{align*}
+    y(x) &= \int_{0}^{x}s\big( \frac{1}{2}(x^2+s^2) - sx \big)ds + \int_{x}^{1}0ds \\
+         &= \int_{0}^{x}\frac{sx^2}{2} + \frac{s^3}{2} - s^2x ds \\
+         &= \bigg[\frac{s^2x^2}{4} + \frac{s^4}{8} - \frac{s^3x}{3} \bigg]_0^x \\
+         &= \frac{x^4}{4} + \frac{x^4}{8} - \frac{x^4}{3} \\
+         &= \frac{x^4}{24}.
+  \end{align*}
+  We have showed both methods give the same results.
+\end{solution}
+\clearpage
 
 \end{document}
