@@ -177,7 +177,7 @@
 \end{solution}
 \clearpage
 \begin{problem}{3}
-  Let \(f : [0,1] \rightarrow \R\) be a given continuous function,
+  Let \(f : [0,1] \rightarrow \R\) be a given continuous function
   and consider the following differential equation for the function \(y\):
   \begin{align}
     \left\{
@@ -191,7 +191,7 @@
   by employing a Green's function we can actually find \(y\) via a $single$ integral.
 \end{problem}
 \begin{subproblem}{a}
-  Show that if the Green's function \(u = G(x:s)\) satisfies
+  Show that if the Green's function \(u = G(x;s)\) satisfies
   \[
     \left\{
       \begin{array}{ll}
@@ -202,12 +202,67 @@
   \]
   then the function
   \begin{align}
-    y(x) = \int_{0}^{1}f(s)G(x:s)ds
+    y(x) = \int_{0}^{1}f(s)G(x;s)ds
   \end{align}
   satisfies (1).
-  
-  
 \end{subproblem}
+\begin{solution}
+  $ $\\
+  From the notes given in class, we have the following:
+  \begin{theorem*}{}
+    $ $\\
+    The function \(y(x) = \int_{0}^{1}f(s)G(x;s)ds\)
+    satisfies the differential equation
+    \[
+      \left\{
+        \begin{array}{ll}
+          L[y] = y'''(x) = f(x) \qquad\qquad\qquad 0 \le x \le 1 \\
+          y(0) = y'(0) = y''(0) = 0
+        \end{array}
+      \right.
+    \]
+  \end{theorem*}
+  $ $\\
+  Note
+  \begin{align*}
+    L[y] = y''' &= \frac{d^3}{dx^3}\big(\int_{0}^{1}f(s)G(x;s)ds\big) \\
+                &= \int_{0}^{1}\frac{d^3}{dx^3}\big(f(s)G(x;s)\big)ds \\
+                &= \int_{0}^{1}f(s)\frac{d^3}{dx^3}\big(G(x;s)\big)ds \\    
+  \end{align*}
+  and
+  \begin{align*}
+    G''' = \delta(x-s) 
+  \end{align*}
+  thus
+  \begin{align*}
+    L[y] &= L\bigg[\int_{0}^{1}f(s)G(x;s)ds \bigg] \\
+         &= \int_{0}^{1}L\bigg[f(s)G(x;s)\bigg] ds
+  \end{align*}
+\end{solution}
+
+% \begin{subproblem}{b}
+%   Find the Green's function \(G(x:s)\) for this problem
+% \end{subproblem}
+
+% \begin{solution}
+%   For \(x \ne s\) the differential equation is
+%   \[
+%     u'''(x) = 0 \qquad\qquad\qquad 0 \le x \le 1
+%   \]
+%   whose general solution is found to be
+%   \[
+%     u(x) = Ax^2 + Bx + C \qquad (A,B,C \in \R)
+%   \]
+%   thus \[
+%     u(x) = 
+%     \left\{
+%       \begin{array}{ll}
+%         Ax^2 + Bx + C \qquad x < s \\
+%         Ex^2 + Dx + F \qquad x > s
+%       \end{array}
+%     \right.
+%   \]
+% \end{solution}
 
 \end{document}
               
