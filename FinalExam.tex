@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry} 
+\usepackage[margin=1in]{geometry}
 \usepackage{amsmath,amsthm,amssymb,amsfonts}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -16,12 +16,12 @@
 \newtheorem*{theorem*}{Theorem}
 
 \begin{document}
- 
+
 \title{Math 4990 - Final Exam}
 \author{Kevin Kim t00201473}
 \maketitle
- 
-\begin{problem}{1} 
+
+\begin{problem}{1}
   Consider the integral function
   \[
     J[y] = \int_{1}^{2}\frac{y'(x)^2}{x}dx
@@ -92,7 +92,7 @@
   \end{align*}
   \(y\) must also satisfy the boundary condition:
   \begin{align*}
-    y(2) = 4c_1 + c_2 = 3 
+    y(2) = 4c_1 + c_2 = 3
     &\lra c_2 = 3-4c_1 \\
     &\lra y = c_1x^2 + (3-4c_1) \\
     &\lra y = c_1(x^2-4)+3
@@ -133,7 +133,7 @@
   \(J[y] = \int_{1}^{2}\frac{y'(x)^2}{x}dx\) since \(y'(x)^2 \ge 0\) and
   \(x \in [1,2]\) which implies \(J[y] \ge 0\). However \(y\) is not a unique minimizer
   since \(c2 \in \R\).
-  
+
 \end{solution}
 \clearpage
 \begin{problem}{2}
@@ -223,47 +223,137 @@
     \]
   \end{theorem*}
   $ $\\
-  Note
+  Let us first observe
   \begin{align*}
     L[y] = y''' &= \frac{d^3}{dx^3}\big(\int_{0}^{1}f(s)G(x;s)ds\big) \\
                 &= \int_{0}^{1}\frac{d^3}{dx^3}\big(f(s)G(x;s)\big)ds \\
-                &= \int_{0}^{1}f(s)\frac{d^3}{dx^3}\big(G(x;s)\big)ds \\    
+                &= \int_{0}^{1}f(s)\frac{d^3}{dx^3}\big(G(x;s)\big)ds \\
+                &= \int_{0}^{1}f(s)G'''(x;s)ds \\    
+                &= \int_{0}^{1}f(s)L[G]ds \\
   \end{align*}
   and
   \begin{align*}
-    G''' = \delta(x-s) 
+    L[G] = G'''(x;s) = \delta(x-s), \qquad 0 \le x \le 1
   \end{align*}
   thus
   \begin{align*}
     L[y] &= L\bigg[\int_{0}^{1}f(s)G(x;s)ds \bigg] \\
-         &= \int_{0}^{1}L\bigg[f(s)G(x;s)\bigg] ds
+         &= \int_{0}^{1}L\bigg[f(s)G(x;s)\bigg] ds \\
+         &= \int_{0}^{1}f(s)L[G]ds \\
+         &= \int_{0}^{1}f(s)\delta(x-s)ds \\
+         &= f(x)
   \end{align*}
+  along with the boundary conditions given \(G(0;s) = 0\)
+  \begin{align*}
+    y(0) &= \int_{0}^{1}f(s)\underbrace{G(0;s)}_{\text 0}ds = 0 \\
+    y'(0) &= \int_{0}^{1}f'(s)\underbrace{G(0;s)}_{\text 0}ds = 0 \\
+    y''(0) &= \int_{0}^{1}f''(s)\underbrace{G(0;s)}_{\text 0}ds = 0 \\
+  \end{align*}
+  We have showed (2) satisfies (1).
+\end{solution}
+\clearpage
+\begin{subproblem}{b}
+  Find the Green's function \(G(x:s)\) for this problem
+  \[
+    \left\{
+      \begin{array}{ll}
+        y'''(x) = f(x) \qquad\qquad\qquad 0 \le x \le 1 \\
+        y(0) = y'(0) = y''(0) = 0
+      \end{array}
+    \right.
+  \]
+\end{subproblem}
+
+\begin{solution}
+  To find Green's function we solve for
+  \[
+    \left\{
+      \begin{array}{ll}
+        u'''(x) = \delta(x-s) \qquad\qquad\qquad 0 \le x \le 1 \\
+        u(0) = u'(0) = u''(0) = 0
+      \end{array}
+    \right.
+  \]
+  where \(u(x) = G(x;s)\).
+  $ $\\
+  $ $\\
+  For \(x \ne s\) the differential equation is
+  \[
+    u'''(x) = 0 \qquad\qquad\qquad 0 \le x \le 1
+  \]
+  whose general solution is found to be
+  \[
+    u(x) = Ax^2 + Bx + C \qquad (A,B,C \in \R)
+  \]
+  thus
+  \[
+    u(x) =
+    \left\{
+      \begin{array}{ll}
+        Ax^2 + Bx + C \qquad x < s \\
+        Ex^2 + Dx + F \qquad x > s
+      \end{array}
+    \right.
+  \]
+  The boundary conditions require
+  \begin{alignat*}{3}
+    u(0) = 0 \quad &\lra Ax^2 +Bx + C = 0 \quad &\lra C = 0\\
+    u'(0) = 0 \quad &\lra 2Ax + B = 0 \quad &\lra B = 0\\
+    u''(0) = 0 \quad &\lra 2A = 0 \quad &\lra A = 0.
+  \end{alignat*}
+  The Green function now has the form
+  \begin{align*}
+    u(x) =
+    \left\{
+      \begin{array}{ll}
+        0 &x < s \\
+        Ex^2 + Dx + F &x > s.
+      \end{array}
+    \right.
+  \end{align*}
+  We also need to satisfy the second derivative discontinuity condition since \\
+  \(u''' = \delta(x-s) \Rightarrow u'' = H(x-s)\)
+  \begin{align*}
+    u''(s^+)-u''(s^-) = 1 &\lra 2E - 0 = 1 \\
+                          &\lra 2E = 1 \\
+                          &\lra E = \frac{1}{2} 
+  \end{align*}
+  The Green function now has the form
+  \begin{align*}
+    u(x) =
+    \left\{
+      \begin{array}{ll}
+        0 &x < s \\
+        \frac{1}{2}x^2 + Dx + F &x > s.
+      \end{array}
+    \right.
+  \end{align*}
+  Together with the need to satisfy the first derivative continuity condition since \\
+  \(u' = \int H(x-s) dx\) is continuous.
+  \begin{align*}
+    u'(s^+) = u''(s^-) &\lra s + D = 0 \\
+                       &\lra D = -s
+  \end{align*}
+  The Green function now has the form
+  \begin{align*}
+    u(x) =
+    \left\{
+      \begin{array}{ll}
+        0 &x < s \\
+        \frac{1}{2}x^2 - sx + F &x > s.
+      \end{array}
+    \right.
+  \end{align*}
+  Along with the continuity condition of \(u\) since \(u'\) is continuous which implies
+  \(u\) is continuous.
+  \begin{align*}
+    u(s^+) = u(s^-) &\lra \frac{1}{2}s^2 - s^2 + F = 0 \\
+                    &\lra
+  \end{align*}
+  
+  
+  
+  
 \end{solution}
 
-% \begin{subproblem}{b}
-%   Find the Green's function \(G(x:s)\) for this problem
-% \end{subproblem}
-
-% \begin{solution}
-%   For \(x \ne s\) the differential equation is
-%   \[
-%     u'''(x) = 0 \qquad\qquad\qquad 0 \le x \le 1
-%   \]
-%   whose general solution is found to be
-%   \[
-%     u(x) = Ax^2 + Bx + C \qquad (A,B,C \in \R)
-%   \]
-%   thus \[
-%     u(x) = 
-%     \left\{
-%       \begin{array}{ll}
-%         Ax^2 + Bx + C \qquad x < s \\
-%         Ex^2 + Dx + F \qquad x > s
-%       \end{array}
-%     \right.
-%   \]
-% \end{solution}
-
 \end{document}
-              
-            
