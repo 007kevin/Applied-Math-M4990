@@ -5,6 +5,7 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\F}{\mathcal{F}}
+\newcommand{\e}{\varepsilon}
 \newcommand{\lra}{\Longrightarrow}
 \newenvironment{problem}[2][Problem]{\begin{trivlist}
   \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2:}]}{\end{trivlist}}
@@ -229,7 +230,7 @@
     L[y] = y''' &= \frac{d^3}{dx^3}\big(\int_{0}^{1}f(s)G(x;s)ds\big) \\
                 &= \int_{0}^{1}\frac{d^3}{dx^3}\big(f(s)G(x;s)\big)ds \\
                 &= \int_{0}^{1}f(s)\frac{d^3}{dx^3}\big(G(x;s)\big)ds \\
-                &= \int_{0}^{1}f(s)G'''(x;s)ds \\    
+                &= \int_{0}^{1}f(s)G'''(x;s)ds \\
                 &= \int_{0}^{1}f(s)L[G]ds \\
   \end{align*}
   and
@@ -317,7 +318,7 @@
   \begin{align*}
     u''(s^+)-u''(s^-) = 1 &\lra 2E - 0 = 1 \\
                           &\lra 2E = 1 \\
-                          &\lra E = \frac{1}{2} 
+                          &\lra E = \frac{1}{2}
   \end{align*}
   The Green function now has the form
   \begin{align*}
@@ -393,7 +394,7 @@
     \begin{array}{ll}
       y(0) &= \frac{0^4}{24} = 0 \\
       y'(0) &= \frac{0^3}{6} = 0 \\
-      y''(0) &= \frac{0^2}{3} = 0.    
+      y''(0) &= \frac{0^2}{3} = 0.
     \end{array}
                \right.
   \end{align*}
@@ -460,7 +461,7 @@
                  \end{array}
                                          \right.
   \end{align*}
-  which is a 2nd order ordinary differential equation. Second order due to \(\hat{u}_{tt}\) 
+  which is a 2nd order ordinary differential equation. Second order due to \(\hat{u}_{tt}\)
   and ordinary due to derivatives only involving \(t\). \\
   $ $ \\
   \begin{footnotesize}
@@ -501,7 +502,7 @@
                             &\lra c_1\sqrt{-\omega^2-1}e^{\sqrt{-\omega^2-1}(0)} -
                               c_2\sqrt{-\omega^2-1}e^{-\sqrt{-\omega^2-1}(0)} = 0 \\
                             &\lra c_1\sqrt{-\omega^2-1} = c_2\sqrt{-\omega^2-1} \\
-                            &\lra c_1 = c_2 
+                            &\lra c_1 = c_2
   \end{align*}
   along with \(\hat{u}(\omega,0) = \frac{1}{2\pi}e^{-i\omega s}\)
   \begin{align*}
@@ -526,9 +527,110 @@
            &= \int_{-\infty}^{\infty}\bigg[\frac{1}{2\pi}\text{cosh}\big(t\sqrt{-\omega^2-1} \big)
              \bigg]e^{i\omega t}d\omega \\
            &= \frac{1}{2\pi}\int_{-\infty}^{\infty}\text{cosh}\big(t\sqrt{-\omega^2-1} \big)
-             e^{i\omega (t-s)}d\omega \\ 
+             e^{i\omega (t-s)}d\omega \\
   \end{align*}
-\end{solution} 
-    
+\end{solution}
+\clearpage
+\begin{problem}{5}
+  Consider the cubic equation
+  \begin{align}
+    x^3 - x + \e = 0
+  \end{align}
+  with \(|\e| \ll 1\). Assume a series solution of the form
+  \[
+    x(\e) = x_0+x_1\e+x_2\e^2 + ...
+  \]
+  Substitute this onto (3) and consider the limit \(\e \rightarrow 0\) to determine the
+  coefficients \(x_0,x_1,x_2\) and thereby obtain a three-term asymptotic approximation for
+  each of the three roots. Verify that your series gives reasonably accurate results for the
+  cases \(\e = 0.1\) and \(\e = 0.01\).
+\end{problem}
+\begin{solution}
+  By substituting \(x(\e) = x_0+x_1\e+x_2\e^2 + ... \) into \(x^3 - x + \e = 0\) we get
+  \begin{align*}
+    x(\e)^3 - x(\e) + \e \lra& (x_0+x_1\e+x_2\e^2 + ...)^3 - (x_0+x_1\e+x_2\e^2 + ...) + \e \\
+                         \lra& ({x_0}^3+3{x_0}^2{x_1}\e+3{x_0}^2x_2e^2+3x_0{x_1}^2\e^2+ 6x_0x_1x_2e^3+\\
+                             &3x_0{x_2}^2\e^4+{x_1}^3\e^3+3{x_1}^2{x_2}\e^4+3x_1{x_2}^2\e^5+{x_2}^3\e^6) \\
+                             &- (x_0+x_1\e+x_2\e^2) +\e  = 0\\
+  \end{align*}
+  For \(\e^0\) terms:
+  \[
+    {x_0}^3-x_0 = 0 \lra
+    \left\{
+      \begin{array}{ll}
+        x_0 = -1\\
+        x_0 = 0\\
+        x_0 = 1\\
+      \end{array}
+    \right.
+  \]
+  For \(\e^1\) terms:
+  \[
+    3{x_0}^2x_1 - x_1 + 1 = 0 \lra
+        \left\{
+      \begin{array}{ll}
+        x_0 = \pm1 \lra 3x_1 - x_1 + 1 = 0 &\lra x_1 = -\frac{1}{2}\\
+        x_0 = 0 \lra - x_1 + 1 = 0 &\lra x_1 = 1\\
+      \end{array}
+    \right.
+  \]
+  For \(\e^2\) terms:
+  \[
+    3{x_0}^2x_2+3x_0{x_1}^2-x_2 = 0\lra \\
+    \left\{
+      \begin{array}{ll}
+        x_0 = 1, x_1 = -\tfrac{1}{2} \lra 3x_2 + \tfrac{3}{4} - x_2 = 0 &\lra x_2 = -\tfrac{3}{8} \\
+        x_0 = -1, x_1 = -\tfrac{1}{2} \lra 3x_2 - \tfrac{3}{4} - x_2 = 0 &\lra x_2 = \tfrac{3}{8} \\
+        x_0 = 0, x_1 = 1 &\lra x_2 = 0
+      \end{array}
+    \right.
+  \]
+  Thus the three-term asymptotic approximation for each of the three roots are:
+  \[
+    x = 
+    \left\{
+      \begin{array}{ll}
+        1-\tfrac{1}{2}\e-\tfrac{3}{8}\e^2 \\
+        -1-\tfrac{1}{2}\e+\tfrac{3}{8}\e^2 \\
+        \e
+      \end{array}
+    \right.
+  \]
+  \textbf{Verification}
+  $ $\\
+  For \(\e\) = 0.1, \(x^3 - x + 0.1 = 0\), 
+  \[
+    x = 0.945649, \quad    
+    x = -1.04668, \quad
+    x = 0.101031, \quad
+  \]
+  \[
+    \left\{
+      \begin{array}{ll}
+        1-\tfrac{1}{2}(0.1)-\tfrac{3}{8}(0.1)^2  &= 0.94625\\
+        -1-\tfrac{1}{2}(0.1)+\tfrac{3}{8}(0.1)^2 &= -1.04625\\
+        0.1 &= 0.1
+      \end{array}
+    \right.
+  \]
+  For \(\e\) = 0.01, \(x^3 - x + 0.01 = 0\), 
+  \[
+    x = 0.994962, \quad    
+    x = -1.00496, \quad
+    x = 0.010001, \quad
+  \]
+  \[
+    \left\{
+      \begin{array}{ll}
+        1-\tfrac{1}{2}(0.1)-\tfrac{3}{8}(0.1)^2  &= 0.9949625\\
+        -1-\tfrac{1}{2}(0.1)+\tfrac{3}{8}(0.1)^2 &= -1.004962\\
+        0.01 &= 0.01
+      \end{array}
+    \right.
+  \]
+  $ $\\
+  So we get reasonably accurate results for cases \(\e = 0.1\) and \(\e = 0.01\)
+
+\end{solution}
 
 \end{document}
