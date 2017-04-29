@@ -72,12 +72,12 @@
   $ $\\
   From the notes given in class, we have the following:
   \begin{theorem*}{}
-  If \(F(x,y,y')\) is strongly convex in \((y,y')\) then a solution \(y(x)\) of the
-  Differential Euler-Lagrange equation uniquely minimizes
-  \[
-    J[y] = \int_{a}^{b}F(x,y,y')dx
-  \]
-  over \(\{y \in C'[a,b] : y(b) = B\} \) if \(F_{y'}(a,y(a),y'(a)) = 0\).
+    If \(F(x,y,y')\) is strongly convex in \((y,y')\) then a solution \(y(x)\) of the
+    Differential Euler-Lagrange equation uniquely minimizes
+    \[
+      J[y] = \int_{a}^{b}F(x,y,y')dx
+    \]
+    over \(\{y \in C'[a,b] : y(b) = B\} \) if \(F_{y'}(a,y(a),y'(a)) = 0\).
   \end{theorem*}
   $ $\\
   We find the solution to the Euler-Lagrange equation \(F_y(x,y,y') -
@@ -182,10 +182,10 @@
   and consider the following differential equation for the function \(y\):
   \begin{align}
     \left\{
-      \begin{array}{ll}
-        y'''(x) = f(x) \qquad\qquad\qquad 0 \le x \le 1 \\
-        y(0) = y'(0) = y''(0) = 0
-      \end{array}
+    \begin{array}{ll}
+      y'''(x) = f(x) \qquad\qquad\qquad 0 \le x \le 1 \\
+      y(0) = y'(0) = y''(0) = 0
+    \end{array}
     \right.
   \end{align}
   Intuitively, finding \(y(x)\) requires three integrations. This problem illustrates that
@@ -306,11 +306,11 @@
   \begin{align*}
     u(x) =
     \left\{
-      \begin{array}{ll}
-        0 &x < s \\
-        Ex^2 + Dx + F &x > s.
-      \end{array}
-    \right.
+    \begin{array}{ll}
+      0 &x < s \\
+      Ex^2 + Dx + F &x > s.
+    \end{array}
+                      \right.
   \end{align*}
   We also need to satisfy the second derivative discontinuity condition since \\
   \(u''' = \delta(x-s) \Rightarrow u'' = H(x-s)\)
@@ -323,11 +323,11 @@
   \begin{align*}
     u(x) =
     \left\{
-      \begin{array}{ll}
-        0 &x < s \\
-        \frac{1}{2}x^2 + Dx + F &x > s.
-      \end{array}
-    \right.
+    \begin{array}{ll}
+      0 &x < s \\
+      \frac{1}{2}x^2 + Dx + F &x > s.
+    \end{array}
+                                \right.
   \end{align*}
   Together with the need to satisfy the first derivative continuity condition since \\
   \(u' = \int H(x-s) dx\) is continuous.
@@ -339,11 +339,11 @@
   \begin{align*}
     u(x) =
     \left\{
-      \begin{array}{ll}
-        0 &x < s \\
-        \frac{1}{2}x^2 - sx + F &x > s.
-      \end{array}
-    \right.
+    \begin{array}{ll}
+      0 &x < s \\
+      \frac{1}{2}x^2 - sx + F &x > s.
+    \end{array}
+                                \right.
   \end{align*}
   Along with the continuity condition of \(u\) since \(u'\) is continuous which implies
   \(u\) is continuous.
@@ -374,10 +374,10 @@
   We are given
   \begin{align*}
     \left\{
-      \begin{array}{ll}
-        y'''(x) = x \qquad\qquad\qquad 0 \le x \le 1 \\
-        y(0) = y'(0) = y''(0) = 0
-      \end{array}
+    \begin{array}{ll}
+      y'''(x) = x \qquad\qquad\qquad 0 \le x \le 1 \\
+      y(0) = y'(0) = y''(0) = 0
+    \end{array}
     \right.
   \end{align*}
   By integrating \(f(x) = x\) thrice,
@@ -390,12 +390,12 @@
   and in order to satisfy the boundary conditions, \(c_1 = c_2 = c_3 = 0\) since
   \begin{align*}
     \left\{
-      \begin{array}{ll}
-        y(0) &= \frac{0^4}{24} = 0 \\
-        y'(0) &= \frac{0^3}{6} = 0 \\
-        y''(0) &= \frac{0^2}{3} = 0.    
-      \end{array}
-    \right.
+    \begin{array}{ll}
+      y(0) &= \frac{0^4}{24} = 0 \\
+      y'(0) &= \frac{0^3}{6} = 0 \\
+      y''(0) &= \frac{0^2}{3} = 0.    
+    \end{array}
+               \right.
   \end{align*}
   Thus
   \[
@@ -405,10 +405,10 @@
   \[
     G(x;s) =
     \left\{
-    \begin{array}{ll}
-      0 &x < s \\
-      \frac{1}{2}(x^2+s^2) - sx &x > s
-    \end{array}
+      \begin{array}{ll}
+        0 &x < s \\
+        \frac{1}{2}(x^2+s^2) - sx &x > s
+      \end{array}
     \right.
   \]
   therefore
@@ -450,22 +450,73 @@
       u(x,0) &= \delta(x-s) \\
       u_t(x,0) &= 0
     \end{array}
-    \right.
-    \quad\xrightarrow{\F}\quad
-    \left\{
-    \begin{array}{ll}
-      \hat{u}_{tt} - (i\omega)^2\hat{u} + \hat{u} &= 0 \qquad\qquad^{(1)}\\
-      \hat{u}(\omega,0) &= \frac{1}{2\pi}e^{-i\omega s} \qquad^{(2)}\\
-      \hat{u}_t(\omega,0) &= 0.
-    \end{array}
-    \right.
+                 \right.
+                 \quad\xrightarrow{\F}\quad
+                 \left\{
+                 \begin{array}{ll}
+                   \hat{u}_{tt} - (i\omega)^2\hat{u} + \hat{u} &= 0 \qquad\qquad^{(1)}\\
+                   \hat{u}(\omega,0) &= \frac{1}{2\pi}e^{-i\omega s} \qquad^{(2)}\\
+                   \hat{u}_t(\omega,0) &= 0.
+                 \end{array}
+                                         \right.
   \end{align*}
-  which is a 2nd order ordinary differential equation (since \(\hat{u}_{tt}\)). \\
-  $ $\\
-  \(^{(1)}\)By derivative property of Fourier Transforms. \\
-  \(^{(2)}\)By shift property and Fourier Transform of the Dirac Delta function.
-  \begin{subproblem}{b}
-  \end{subproblem}
+  which is a 2nd order ordinary differential equation. Second order due to \(\hat{u}_{tt}\) 
+  and ordinary due to derivatives only involving \(t\). \\
+  $ $ \\
+  \begin{footnotesize}
+    \(^{(1)}\)By derivative property of Fourier Transforms. \\
+    \(^{(2)}\)By shift property and Fourier Transform of the Dirac Delta function.
+  \end{footnotesize}
 \end{solution}
+
+\begin{subproblem}{b}
+  Find \(\hat{u}(\omega,t)\) by solving the differential equation from part (a).
+\end{subproblem}
+\begin{solution}
+  From part a we have the following:
+  \[
+    \left\{
+      \begin{array}{ll}
+        \hat{u}_{tt} - (i\omega)^2\hat{u} + \hat{u} &= 0 \\
+        \hat{u}(\omega,0) &= \frac{1}{2\pi}e^{-i\omega s} \\
+        \hat{u}_t(\omega,0) &= 0.
+      \end{array}
+    \right.
+  \]
+  For \(\hat{u}_{tt} - (i\omega)^2\hat{u} + \hat{u} = 0\),
+  \begin{align*}
+    \hat{u}_{tt} = (i\omega)^2\hat{u} - \hat{u} &\lra \hat{u}_{tt} = (\omega^2 - 1)\hat{u} \\
+                                                &\lra \hat{u} = c_1e^{\sqrt{\omega^2-1}t}+
+                                                  c_2e^{-\sqrt{\omega^2-1}t}
+                                                  \quad (c_1,c_2 \in \R)\qquad^{(1)}
+  \end{align*}
+  \begin{footnotesize}
+    \(^{(1)}\)By solving for second-order linearly ordinary differential
+    equation on Wolfram Alpha \\
+  \end{footnotesize}
+  $ $\\
+  together with \(\hat{u}_t(\omega,0) = 0\)
+  \begin{align*}
+    \hat{u}_t(\omega,0) = 0 &\lra \frac{d}{dt}(c_1e^{\sqrt{\omega^2-1}t}+ c_2e^{-\sqrt{\omega^2-1}t}) = 0\\
+                            &\lra c_1\sqrt{\omega^2-1}e^{\sqrt{\omega^2-1}(0)} -
+                              c_2\sqrt{\omega^2-1}e^{-\sqrt{\omega^2-1}(0)} = 0 \\
+                            &\lra c_1\sqrt{\omega^2-1} = c_2\sqrt{\omega^2-1} \\
+                            &\lra c_1 = c_2 
+  \end{align*}
+  along with \(\hat{u}(\omega,0) = \frac{1}{2\pi}e^{-i\omega s}\)
+  \begin{align*}
+    &\lra \frac{1}{2\pi}e^{-i\omega s} \underbrace{\bigg(c_1e^{\sqrt{\omega^2-1}(0)}+
+      c_1e^{-\sqrt{\omega^2-1}(0)} \bigg)}_{= 1} \\
+    &\lra c_1 = \frac{1}{2}
+  \end{align*}
+  therefore
+  \begin{align*}
+    \boxed{
+    \hat{u}(\omega,t) = \frac{1}{4\pi}e^{-i\omega s}\bigg(e^{\sqrt{\omega^2-1}t}+
+    e^{-\sqrt{\omega^2-1}t} \bigg)
+    }
+  \end{align*}
+\end{solution}
+
 
 \end{document}
