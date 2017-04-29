@@ -485,9 +485,9 @@
   \]
   For \(\hat{u}_{tt} - (i\omega)^2\hat{u} + \hat{u} = 0\),
   \begin{align*}
-    \hat{u}_{tt} = (i\omega)^2\hat{u} - \hat{u} &\lra \hat{u}_{tt} = (\omega^2 - 1)\hat{u} \\
-                                                &\lra \hat{u} = c_1e^{\sqrt{\omega^2-1}t}+
-                                                  c_2e^{-\sqrt{\omega^2-1}t}
+    \hat{u}_{tt} = (i\omega)^2\hat{u} - \hat{u} &\lra \hat{u}_{tt} = (-\omega^2 - 1)\hat{u} \\
+                                                &\lra \hat{u} = c_1e^{\sqrt{-\omega^2-1}t}+
+                                                  c_2e^{-\sqrt{-\omega^2-1}t}
                                                   \quad (c_1,c_2 \in \R)\qquad^{(1)}
   \end{align*}
   \begin{footnotesize}
@@ -497,23 +497,23 @@
   $ $\\
   together with \(\hat{u}_t(\omega,0) = 0\)
   \begin{align*}
-    \hat{u}_t(\omega,0) = 0 &\lra \frac{d}{dt}(c_1e^{\sqrt{\omega^2-1}t}+ c_2e^{-\sqrt{\omega^2-1}t}) = 0\\
-                            &\lra c_1\sqrt{\omega^2-1}e^{\sqrt{\omega^2-1}(0)} -
-                              c_2\sqrt{\omega^2-1}e^{-\sqrt{\omega^2-1}(0)} = 0 \\
-                            &\lra c_1\sqrt{\omega^2-1} = c_2\sqrt{\omega^2-1} \\
+    \hat{u}_t(\omega,0) = 0 &\lra \frac{d}{dt}(c_1e^{\sqrt{-\omega^2-1}t}+ c_2e^{-\sqrt{-\omega^2-1}t}) = 0\\
+                            &\lra c_1\sqrt{-\omega^2-1}e^{\sqrt{-\omega^2-1}(0)} -
+                              c_2\sqrt{-\omega^2-1}e^{-\sqrt{-\omega^2-1}(0)} = 0 \\
+                            &\lra c_1\sqrt{-\omega^2-1} = c_2\sqrt{-\omega^2-1} \\
                             &\lra c_1 = c_2 
   \end{align*}
   along with \(\hat{u}(\omega,0) = \frac{1}{2\pi}e^{-i\omega s}\)
   \begin{align*}
-    &\lra \frac{1}{2\pi}e^{-i\omega s} \underbrace{\bigg(c_1e^{\sqrt{\omega^2-1}(0)}+
-      c_1e^{-\sqrt{\omega^2-1}(0)} \bigg)}_{= 1} \\
+    &\lra \frac{1}{2\pi}e^{-i\omega s} \underbrace{\bigg(c_1e^{\sqrt{-\omega^2-1}(0)}+
+      c_1e^{-\sqrt{-\omega^2-1}(0)} \bigg)}_{= 1} \\
     &\lra c_1 = \frac{1}{2}
   \end{align*}
   therefore
   \begin{align*}
-    \hat{u}(\omega,t) &= \frac{1}{4\pi}e^{-i\omega s}\bigg(e^{\sqrt{\omega^2-1}t}+
-                        e^{-\sqrt{\omega^2-1}t} \bigg) \\
-                      &= \boxed{\frac{1}{2\pi}e^{-i\omega s}cosh\big(t\sqrt{\omega^2-1} \big)}
+    \hat{u}(\omega,t) &= \frac{1}{4\pi}e^{-i\omega s}\bigg(e^{\sqrt{-\omega^2-1}t}+
+                        e^{-\sqrt{-\omega^2-1}t} \bigg) \\
+                      &= \boxed{\frac{1}{2\pi}e^{-i\omega s}cosh\big(t\sqrt{-\omega^2-1} \big)}
                         \qquad \text{since } e^x + e^-x = 2\text{cosh}(x)\\
   \end{align*}
 \end{solution}
@@ -523,14 +523,10 @@
 \begin{solution}
   \begin{align*}
     u(x,t) &= \int_{-\infty}^{\infty}\hat{u}(\omega,t)e^{i\omega t}d\omega \\
-           &= \int_{-\infty}^{\infty}\bigg[\frac{1}{4\pi}e^{-i\omega s}\bigg(e^{\sqrt{\omega^2-1}t}+
-             e^{-\sqrt{\omega^2-1}t} \bigg) \bigg]e^{i\omega t}d\omega \\
-           &= \frac{1}{4\pi}\int_{-\infty}^{\infty}\bigg[e^{-i\omega s}\bigg(e^{\sqrt{\omega^2-1}t}+
-             e^{-\sqrt{\omega^2-1}t} \bigg) \bigg]e^{i\omega t}d\omega \\
-           &= \frac{1}{4\pi}\int_{-\infty}^{\infty}\bigg(e^{\sqrt{\omega^2-1}t}+
-             e^{-\sqrt{\omega^2-1}t} \bigg)e^{i\omega (t-s)}d\omega \\
-           &= \frac{1}{2\pi}\int_{-\infty}^{\infty}\text{cosh}\big(t\sqrt{\omega^2-1} \big)
-             e^{i\omega (t-s)}d\omega \\
+           &= \int_{-\infty}^{\infty}\bigg[\frac{1}{2\pi}\text{cosh}\big(t\sqrt{-\omega^2-1} \big)
+             \bigg]e^{i\omega t}d\omega \\
+           &= \frac{1}{2\pi}\int_{-\infty}^{\infty}\text{cosh}\big(t\sqrt{-\omega^2-1} \big)
+             e^{i\omega (t-s)}d\omega \\ 
   \end{align*}
 \end{solution} 
     
