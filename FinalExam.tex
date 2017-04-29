@@ -4,6 +4,7 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathcal{F}}
 \newcommand{\lra}{\Longrightarrow}
 \newenvironment{problem}[2][Problem]{\begin{trivlist}
   \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2:}]}{\end{trivlist}}
@@ -438,5 +439,33 @@
   Apply a Fourier transform with respect to \(x\) to obtain a 2nd-order ordinary differential
   equation for the function \(\hat{u}(\omega,t)\).
 \end{subproblem}
+\begin{solution}
+  $ $\\
+  By applying the Fourier transform with respect to x such that \(\F\{u(x,t)\} =
+  \hat{u}(\omega,t)\) we get
+  \begin{align*}
+    \left\{
+    \begin{array}{ll}
+      u_{tt}-u_{xx} + u &= 0 \\
+      u(x,0) &= \delta(x-s) \\
+      u_t(x,0) &= 0
+    \end{array}
+    \right.
+    \quad\xrightarrow{\F}\quad
+    \left\{
+    \begin{array}{ll}
+      \hat{u}_{tt} - (i\omega)^2\hat{u} + \hat{u} &= 0 \qquad\qquad^{(1)}\\
+      \hat{u}(\omega,0) &= \frac{1}{2\pi}e^{-i\omega s} \qquad^{(2)}\\
+      \hat{u}_t(\omega,0) &= 0.
+    \end{array}
+    \right.
+  \end{align*}
+  which is a 2nd order ordinary differential equation (since \(\hat{u}_{tt}\)). \\
+  $ $\\
+  \(^{(1)}\)By derivative property of Fourier Transforms. \\
+  \(^{(2)}\)By shift property and Fourier Transform of the Dirac Delta function.
+  \begin{subproblem}{b}
+  \end{subproblem}
+\end{solution}
 
 \end{document}
